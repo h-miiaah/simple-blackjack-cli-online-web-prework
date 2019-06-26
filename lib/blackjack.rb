@@ -53,7 +53,6 @@ end
 def invalid_command
   # code invalid_command here
   print "Please enter a valid command"
-  get_user_input
 end
 
 #####################################################
