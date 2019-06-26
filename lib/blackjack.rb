@@ -44,6 +44,7 @@ end
 
 def invalid_command
   # code invalid_command here
+  print "Please enter a valid command"
 end
 
 #####################################################
