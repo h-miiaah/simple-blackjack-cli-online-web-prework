@@ -8,9 +8,9 @@ def deal_card
   rand(1..11)
 end
 
-def display_card_total(number)
+def display_card_total(card_total)
   # code #display_card_total here
-  puts "Your cards add up to #{number}"
+  puts "Your cards add up to #{card_total}"
 end
 
 def prompt_user
@@ -30,17 +30,17 @@ end
 
 def initial_round
   # code #initial_round here
-  2.times do
-    deal_card
-  end
-  return display_card_total
+  first_deal = deal_card
+  second_deal = deal_card
+  card_total = first_deal + second_deal
+  display_card_total(card_total)
 end
 
 def hit?(current_card_total)
   # code hit? here
   prompt_user
   get_user_input
-  if user_input == "s"
+  if get_user_input == "s"
 
   end
 end
