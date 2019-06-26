@@ -20,7 +20,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  user_input = gets.chomp
+  gets.chomp
 end
 
 def end_game(card_total)
@@ -40,6 +40,9 @@ def hit?(current_card_total)
   # code hit? here
   prompt_user
   get_user_input
+  if user_input == "s"
+
+  end
 end
 
 def invalid_command
